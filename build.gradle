@@ -1,4 +1,4 @@
- uildscript {
+buildscript {
     dependencies {
         classpath "co.riiid:gradle-github-plugin:0.4.2"
         classpath "com.google.gradle:osdetector-gradle-plugin:1.4.0"
