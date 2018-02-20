@@ -1,4 +1,4 @@
-buildscript {
+ uildscript {
     dependencies {
         classpath "co.riiid:gradle-github-plugin:0.4.2"
         classpath "com.google.gradle:osdetector-gradle-plugin:1.4.0"
@@ -7,9 +7,7 @@ buildscript {
             exclude group: 'nekohtml', module: 'xercesMinimal'
         }
 
-        classpath("gradle.plugin.org.jlleitschuh.gradle:ktlint-gradle:3.0.1") {
-            exclude group: 'com.github.shyiko', module: 'ktlint'
-        }
+        classpath("gradle.plugin.org.jlleitschuh.gradle:ktlint-gradle:3.0.0")
         classpath 'com.github.shyiko:ktlint:0.15.1'
 
         classpath "gradle.plugin.org.jmailen.gradle:kotlinter-gradle:1.7.0"
