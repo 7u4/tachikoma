@@ -19,6 +19,16 @@ kapt {
     useBuildCache = true
 }
 
+junitPlatform {
+    filters {
+        engines {
+            include 'spek'
+        }
+    }
+
+    enableStandardTestTask true
+}
+
 compileKotlin {
     kotlinOptions {
         languageVersion = "1.2"
