@@ -11,6 +11,8 @@ services:
 before_install:
 - docker version
 - docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD"
+after_success:
+  - bash <$(curl -s https://raw.githubusercontent.com/codecov/codecov-bash/8b76995ad4a95a61cecd4b049a448a402d91d197/codecov)
 notifications:
   irc:
     channels:
